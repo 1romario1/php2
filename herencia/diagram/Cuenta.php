@@ -22,9 +22,4 @@ class Cuenta{
         return $this->saldo_dolares;
     }
 }
-$cuenta=new Cuenta('10411214',500.00,1.0);
-echo $cuenta->mostrar_datos();
-echo 'El numero de la cuenta es: ',$cuenta->get_num_cuenta(),'<br>';
-echo 'El numero saldo en pesos:',$cuenta->get_saldo_pesos(),'<br>';
-echo 'El numero saldo en dolares:',$cuenta->get_saldo_dolares(),'<br>';
 ?>

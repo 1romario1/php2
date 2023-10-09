@@ -43,10 +43,10 @@ class Persona{
         return $this->genero;
     }
 }
-$persona=new Persona(1193557345,'luz','reina','femenino');
+/*$persona=new Persona(1193557345,'luz','reina','femenino');
 $persona->saludo();
 echo 'El nombre de la persona es ',$persona->get_nombre(),'<br>';
 echo $persona->set_nombre('Luz');
-echo ' El nuevo nombre de la persona es ',$persona->get_nombre(),'<br>';
+echo ' El nuevo nombre de la persona es ',$persona->get_nombre(),'<br>';*/
 
 ?>

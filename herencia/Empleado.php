@@ -1,11 +1,11 @@
 <?php
-require('persona.php');
+require_once('persona.php');
 
 class Empleado extends Persona{
     private string $cargo;
     private float $salario;
 
-    public function __construct(string $cargo,float $salario, int $nro_documento, string $nombre, string $apellido, string $genero){
+    public function __construct(int $nro_documento, string $nombre, string $apellido, string $genero,string $cargo,float $salario){
         parent::__construct($nro_documento, $nombre, $apellido, $genero);
         $this->cargo=$cargo;
         $this->salario=$salario;

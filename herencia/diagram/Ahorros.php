@@ -5,7 +5,7 @@ class Ahorros extends Cuenta{
     private string $fecha_apertura;
     private float $tasa_interes;
 
-    public function __construct(string $surcursal_apertura,string $fecha_apertura,float $tasa_interes,string $num_cuenta,float $saldo_pesos,float $saldo_dolares ){
+    public function __construct(string $num_cuenta, float $saldo_pesos, float $saldo_dolares, string $surcursal_apertura, string $fecha_apertura, float $tasa_interes){
         parent::__construct($num_cuenta,$saldo_pesos,$saldo_dolares);
         $this->surcursal_apertura=$surcursal_apertura;
         $this->fecha_apertura=$fecha_apertura;
@@ -15,21 +15,21 @@ class Ahorros extends Cuenta{
         $this->surcursal_apertura=$surcursal_apertura;
     }   
     public function get_surcursal_apertura(){
-        return $this->num_cuenta;
+        return $this->surcursal_apertura;
     }
 
     public function set_fecha_apertura($fecha_apertura){
-        $this->fecha_apertura;
+        $this->fecha_apertura=$fecha_apertura;
     }
     public function get_fecha_apertura(){
-        return $this->saldo_pesos;
+        return $this->fecha_apertura;
     }
     
     public function set_tasa_interes($tasa_interes){
         $this->tasa_interes=$tasa_interes;
     }
     public function get_tasa_interes(){
-        return $this->saldo_dolares;
+        return $this->tasa_interes;
     }
 }
 ?>
